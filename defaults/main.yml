@@ -1,2 +1,4 @@
 ---
-# defaults file for nodered-docker
+nodered_image: nodered/node-red
+nodered_port: 1880
+nodered_service_name: nodered
