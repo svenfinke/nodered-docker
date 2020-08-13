@@ -1,0 +1,13 @@
+---
+name: Deploy to Ansible Galaxy
+on: [push]
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy Ansible Galaxy Collection
+        uses: artis3n/ansible_galaxy_collection@v2.2.1
+        with:
+          api_key: ${{ secrets.GALAXY_API_KEY }}
