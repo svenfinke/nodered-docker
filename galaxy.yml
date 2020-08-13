@@ -1,0 +1,5 @@
+namespace: "svenfinke"
+name: "nodered-docker"
+version: "0.1"
+readme: "README.md"
+authors: "Sven Finke"
