@@ -1,0 +1,21 @@
+---
+- name: Make sure python3 is installed
+  apt:
+    name: python3
+    state: present
+    update_cache: yes
+- name: Make sure pip is installed
+  apt:
+    name: python3-pip
+    state: present
+    update_cache: yes
+- name: Make sure docker-py is installed 
+  pip:
+    name: docker-py
+- name: Run nodered
+  docker_container:
+    name: nodered
+    image: nodered/node-red
+    ports:
+      - "1880:1880"
+    state: started
