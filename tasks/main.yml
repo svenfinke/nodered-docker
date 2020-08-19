@@ -14,7 +14,7 @@
     name: docker-py
 - name: Create Docker volume for nodered
   docker_volume:
-    name: {{nodered_volume}}
+    name: "{{nodered_volume}}"
 - name: Run nodered
   docker_container:
     name: nodered
@@ -24,4 +24,4 @@
     state: started
     restart_policy: always
     volumes:
-      - {{nodered_volume}}
+      - "{{nodered_volume}}"

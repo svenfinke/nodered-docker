@@ -2,3 +2,4 @@
 nodered_image: nodered/node-red
 nodered_port: 1880
 nodered_service_name: nodered
+nodered_volume: nodered
