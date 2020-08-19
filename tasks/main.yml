@@ -14,14 +14,14 @@
     name: docker-py
 - name: Create Docker volume for nodered
   docker_volume:
-    name: "{{nodered_volume}}"
+    name: "{{ nodered_volume }}"
 - name: Run nodered
   docker_container:
     name: nodered
-    image: "{{nodered_image}}"
+    image: "{{ nodered_image }}"
     ports:
-      - "{{nodered_port}}:1880"
+      - "{{ nodered_port }}:1880"
     state: started
     restart_policy: always
     volumes:
-      - "{{nodered_volume}}"
+      - "{{ nodered_volume }}"

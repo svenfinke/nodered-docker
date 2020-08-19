@@ -26,14 +26,14 @@ galaxy_info:
   # To view available platforms and versions (or releases), visit:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
-  # platforms:
-  # - name: Fedora
-  #   versions:
-  #   - all
+  platforms:
+  - name: Ubuntu
+    versions:
+    - 20.04
   #   - 25
-  # - name: SomePlatform
-  #   versions:
-  #   - all
+  - name: Raspian
+    versions:
+    - stretch
   #   - 1.0
   #   - 7
   #   - 99.99
